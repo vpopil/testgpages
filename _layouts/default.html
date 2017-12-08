@@ -24,7 +24,11 @@
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
-      <nav class="group" style="position: sticky">
+      <nav class="group" style="position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;   
+    width:20%; ">
         {% if site.title and site.title != page.title %}
            <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
         {% endif %}
